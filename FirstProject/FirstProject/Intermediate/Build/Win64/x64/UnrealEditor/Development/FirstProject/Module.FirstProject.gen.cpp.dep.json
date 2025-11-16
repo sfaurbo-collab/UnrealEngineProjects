@@ -1,0 +1,17 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\unrealengineprojects\\firstproject\\firstproject\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\firstproject\\module.firstproject.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\unrealengineprojects\\firstproject\\firstproject\\intermediate\\build\\win64\\x64\\firstprojecteditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.inclorderunreal5_3.h.pch",
+        "Includes": [
+            "c:\\unrealengineprojects\\firstproject\\firstproject\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\firstproject\\definitions.firstproject.h",
+            "c:\\unrealengineprojects\\firstproject\\firstproject\\intermediate\\build\\win64\\unrealeditor\\inc\\firstproject\\uht\\firstproject.init.gen.cpp",
+            "c:\\unrealengineprojects\\firstproject\\firstproject\\intermediate\\build\\win64\\unrealeditor\\inc\\firstproject\\uht\\fpdoor.gen.cpp",
+            "c:\\unrealengineprojects\\firstproject\\firstproject\\source\\firstproject\\public\\actors\\fpdoor.h",
+            "c:\\unrealengineprojects\\firstproject\\firstproject\\intermediate\\build\\win64\\unrealeditor\\inc\\firstproject\\uht\\fpdoor.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

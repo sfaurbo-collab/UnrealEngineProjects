@@ -5,8 +5,33 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Default Uncontrolled Changelist",
 			"files": [
-				"C:/UnrealEngineProjects/FirstProject/FirstProject/Content/Maps/Main.umap",
-				"C:/UnrealEngineProjects/FirstProject/FirstProject/Content/FirstProject/Maps/Main.umap"
+				"C:/UnrealEngineProjects/FirstProject/FirstProject/Content/FirstProject/Maps/Main.umap",
+				"C:/UnrealEngineProjects/FirstProject/FirstProject/Content/FirstProject/Assets/Textures/Door_DefaultMaterial_OcclusionRoughnessMetallic.uasset",
+				"C:/UnrealEngineProjects/FirstProject/FirstProject/Content/FirstProject/Assets/Materials/M_TextureBase.uasset",
+				"C:/UnrealEngineProjects/FirstProject/FirstProject/Content/FirstProject/Assets/Materials/MI_TextureDoor.uasset",
+				"C:/UnrealEngineProjects/FirstProject/FirstProject/Content/FirstProject/Assets/Textures/Lamp_DefaultMaterial_OcclusionRoughnessMetallic.uasset",
+				"C:/UnrealEngineProjects/FirstProject/FirstProject/Content/FirstProject/Assets/Textures/Bomb_DefaultMaterial_OcclusionRoughnessMetallic.uasset",
+				"C:/UnrealEngineProjects/FirstProject/FirstProject/Content/FirstProject/Assets/Materials/MI_TextureLamp.uasset",
+				"C:/UnrealEngineProjects/FirstProject/FirstProject/Content/Stylized_Egypt/Maps/Stylized_Egypt_Demo.umap",
+				"C:/UnrealEngineProjects/FirstProject/FirstProject/Content/FirstProject/Assets/Meshes/Bomb.uasset",
+				"C:/UnrealEngineProjects/FirstProject/FirstProject/Content/FirstProject/Assets/Meshes/Door.uasset",
+				"C:/UnrealEngineProjects/FirstProject/FirstProject/Content/FirstProject/Assets/Meshes/Lamp.uasset",
+				"C:/UnrealEngineProjects/FirstProject/FirstProject/Content/FirstProject/Assets/Textures/Bomb_DefaultMaterial_BaseColor.uasset",
+				"C:/UnrealEngineProjects/FirstProject/FirstProject/Content/FirstProject/Assets/Textures/Bomb_DefaultMaterial_Normal.uasset",
+				"C:/UnrealEngineProjects/FirstProject/FirstProject/Content/FirstProject/Assets/Textures/Door_DefaultMaterial_BaseColor.uasset",
+				"C:/UnrealEngineProjects/FirstProject/FirstProject/Content/FirstProject/Assets/Textures/Door_DefaultMaterial_Normal.uasset",
+				"C:/UnrealEngineProjects/FirstProject/FirstProject/Content/FirstProject/Assets/Textures/Lamp_DefaultMaterial_BaseColor.uasset",
+				"C:/UnrealEngineProjects/FirstProject/FirstProject/Content/FirstProject/Assets/Textures/Lamp_DefaultMaterial_Normal.uasset",
+				"C:/UnrealEngineProjects/FirstProject/FirstProject/Content/FirstProject/Assets/Meshes/light.uasset",
+				"C:/Unreal Engine/UE_5.6/Engine/Plugins/Interchange/Assets/Content/Materials/PhongSurfaceMaterial.uasset",
+				"C:/UnrealEngineProjects/FirstProject/FirstProject/Content/FirstProject/Assets/Meshes/Material.uasset",
+				"C:/UnrealEngineProjects/FirstProject/FirstProject/Content/FirstProject/Assets/Materials/MI_TextureBomb.uasset",
+				"C:/UnrealEngineProjects/FirstProject/FirstProject/Content/FirstProject/Blueprints/BP_Door.uasset",
+				"C:/UnrealEngineProjects/FirstProject/FirstProject/Content/FirstProject/Blueprints/BP_DoorBlueprintOnly.uasset",
+				"C:/UnrealEngineProjects/FirstProject/FirstProject/Content/FirstProject/Blueprints/Actors/BP_Door.uasset",
+				"C:/UnrealEngineProjects/FirstProject/FirstProject/Content/FirstProject/Assets/Textures/Door_DefaultMaterial_BaseColor_Mat.uasset",
+				"C:/UnrealEngineProjects/FirstProject/FirstProject/Content/FirstProject/Assets/Materials/Door_DefaultMaterial_BaseColor_Mat.uasset",
+				"C:/UnrealEngineProjects/FirstProject/FirstProject/Content/Maps/Main.umap"
 			]
 		}
 	]
