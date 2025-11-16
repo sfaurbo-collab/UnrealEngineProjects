@@ -1,0 +1,9 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.Task4.gen.cpp.obj": [
+			"MovingActor.gen.cpp.obj",
+			"Task4.init.gen.cpp.obj"
+		]
+	}
+}

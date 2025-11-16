@@ -1,0 +1,17 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\unrealengineprojects\\week1\\task4\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\task4\\module.task4.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\unrealengineprojects\\week1\\task4\\intermediate\\build\\win64\\x64\\task4editor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.inclorderunreal5_3.h.pch",
+        "Includes": [
+            "c:\\unrealengineprojects\\week1\\task4\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\task4\\definitions.task4.h",
+            "c:\\unrealengineprojects\\week1\\task4\\intermediate\\build\\win64\\unrealeditor\\inc\\task4\\uht\\movingactor.gen.cpp",
+            "c:\\unrealengineprojects\\week1\\task4\\source\\task4\\public\\actors\\movingactor.h",
+            "c:\\unrealengineprojects\\week1\\task4\\intermediate\\build\\win64\\unrealeditor\\inc\\task4\\uht\\movingactor.generated.h",
+            "c:\\unrealengineprojects\\week1\\task4\\intermediate\\build\\win64\\unrealeditor\\inc\\task4\\uht\\task4.init.gen.cpp"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

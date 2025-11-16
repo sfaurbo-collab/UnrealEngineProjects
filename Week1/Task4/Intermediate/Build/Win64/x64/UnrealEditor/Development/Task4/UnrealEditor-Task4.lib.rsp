@@ -1,0 +1,15 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-Task4.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:/UnrealEngineProjects/Week1/Task4/Intermediate/Build/Win64/x64/Task4Editor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.InclOrderUnreal5_3.h.obj"
+"C:/UnrealEngineProjects/Week1/Task4/Intermediate/Build/Win64/x64/UnrealEditor/Development/Task4/Module.Task4.gen.cpp.obj"
+"C:/UnrealEngineProjects/Week1/Task4/Intermediate/Build/Win64/x64/UnrealEditor/Development/Task4/Task4.cpp.obj"
+"C:/UnrealEngineProjects/Week1/Task4/Intermediate/Build/Win64/x64/UnrealEditor/Development/Task4/MovingActor.cpp.obj"
+"C:/UnrealEngineProjects/Week1/Task4/Intermediate/Build/Win64/x64/UnrealEditor/Development/Task4/PerModuleInline.gen.cpp.obj"
+"C:/UnrealEngineProjects/Week1/Task4/Intermediate/Build/Win64/x64/UnrealEditor/Development/Task4/Default.rc2.res"
+/OUT:"C:/UnrealEngineProjects/Week1/Task4/Intermediate/Build/Win64/x64/UnrealEditor/Development/Task4/UnrealEditor-Task4.lib"
