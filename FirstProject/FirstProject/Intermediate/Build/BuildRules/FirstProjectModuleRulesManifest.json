@@ -1,8 +1,0 @@
-{
-	"SourceFiles": [
-		"C:\\UnrealEngineProjects\\FirstProject\\FirstProject\\Source\\FirstProject\\FirstProject.Build.cs",
-		"C:\\UnrealEngineProjects\\FirstProject\\FirstProject\\Source\\FirstProject.Target.cs",
-		"C:\\UnrealEngineProjects\\FirstProject\\FirstProject\\Source\\FirstProjectEditor.Target.cs"
-	],
-	"EngineVersion": "5.6.1"
-}

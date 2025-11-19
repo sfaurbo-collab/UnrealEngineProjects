@@ -1,9 +1,0 @@
-{
-	"RemapUnityFiles": 
-	{
-		"Module.FirstProject.gen.cpp.obj": [
-			"FirstProject.init.gen.cpp.obj",
-			"FPDoor.gen.cpp.obj"
-		]
-	}
-}
