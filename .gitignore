@@ -40,8 +40,11 @@
 *.sdf
 *.VC.db
 *.VC.opendb
+
+# Added by user
 *.log
 *.ini
+*Secure Preferences*
 
 # Precompiled Assets
 SourceArt/**/*.png
