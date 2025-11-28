@@ -41,7 +41,7 @@
 *.VC.db
 *.VC.opendb
 *.log
-DefaultEngine.ini
+*.ini
 
 # Precompiled Assets
 SourceArt/**/*.png
