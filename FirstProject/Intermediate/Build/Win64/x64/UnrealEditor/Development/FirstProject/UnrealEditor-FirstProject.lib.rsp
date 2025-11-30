@@ -1,0 +1,15 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-FirstProject.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:\UnrealEngineProjects\FirstProject\Intermediate\Build\Win64\x64\FirstProjectEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.InclOrderOldest.h.obj"
+"C:\UnrealEngineProjects\FirstProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\FirstProject\FirstProject.init.gen.cpp.obj"
+"C:\UnrealEngineProjects\FirstProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\FirstProject\FPDoor.gen.cpp.obj"
+"C:\UnrealEngineProjects\FirstProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\FirstProject\FirstProject.cpp.obj"
+"C:\UnrealEngineProjects\FirstProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\FirstProject\FPDoor.cpp.obj"
+"C:\UnrealEngineProjects\FirstProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\FirstProject\Default.rc2.res"
+/OUT:"C:\UnrealEngineProjects\FirstProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\FirstProject\UnrealEditor-FirstProject.lib"

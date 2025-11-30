@@ -6,6 +6,26 @@
 			"description": "Default Uncontrolled Changelist",
 			"files": [
 				"C:/UnrealEngineProjects/FirstProject/Content/Maps/Main.umap",
+				"C:/UnrealEngineProjects/FirstProject/Content/Assets/Meshes/Bomb.uasset",
+				"C:/UnrealEngineProjects/FirstProject/Content/Assets/Meshes/Door.uasset",
+				"C:/UnrealEngineProjects/FirstProject/Content/Assets/Meshes/Lamp.uasset",
+				"C:/UnrealEngineProjects/FirstProject/Content/Assets/Meshes/light.uasset",
+				"C:/UnrealEngineProjects/FirstProject/Content/Assets/Meshes/Material.uasset",
+				"C:/UnrealEngineProjects/FirstProject/Content/Assets/Textures/Bomb_DefaultMaterial_BaseColor.uasset",
+				"C:/UnrealEngineProjects/FirstProject/Content/Assets/Textures/Bomb_DefaultMaterial_Normal.uasset",
+				"C:/UnrealEngineProjects/FirstProject/Content/Assets/Textures/Bomb_DefaultMaterial_OcclusionRoughnessMetallic.uasset",
+				"C:/UnrealEngineProjects/FirstProject/Content/Assets/Textures/Door_DefaultMaterial_BaseColor.uasset",
+				"C:/UnrealEngineProjects/FirstProject/Content/Assets/Textures/Door_DefaultMaterial_Normal.uasset",
+				"C:/UnrealEngineProjects/FirstProject/Content/Assets/Textures/Door_DefaultMaterial_OcclusionRoughnessMetallic.uasset",
+				"C:/UnrealEngineProjects/FirstProject/Content/Assets/Textures/Lamp_DefaultMaterial_BaseColor.uasset",
+				"C:/UnrealEngineProjects/FirstProject/Content/Assets/Textures/Lamp_DefaultMaterial_Normal.uasset",
+				"C:/UnrealEngineProjects/FirstProject/Content/Assets/Textures/Lamp_DefaultMaterial_OcclusionRoughnessMetallic.uasset",
+				"C:/UnrealEngineProjects/FirstProject/Content/Assets/Materials/M_BaseTexture.uasset",
+				"C:/UnrealEngineProjects/FirstProject/Content/Assets/Materials/MI_Door.uasset",
+				"C:/UnrealEngineProjects/FirstProject/Content/Assets/Materials/M_TextureBase.uasset",
+				"C:/UnrealEngineProjects/FirstProject/Content/Assets/Materials/MI_TextureDoor.uasset",
+				"C:/UnrealEngineProjects/FirstProject/Content/Assets/Materials/MI_TextureBomb.uasset",
+				"C:/UnrealEngineProjects/FirstProject/Content/Assets/Materials/MI_TextureLamp.uasset",
 				"C:/UnrealEngineProjects/FirstProject/Content/Blueprints/BP_Door.uasset"
 			]
 		}
