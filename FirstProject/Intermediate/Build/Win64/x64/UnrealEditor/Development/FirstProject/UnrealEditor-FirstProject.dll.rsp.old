@@ -21,7 +21,7 @@
 /ALTERNATENAME:__imp___std_init_once_complete=__imp_InitOnceComplete
 /DELAYLOAD:"d3d12.dll"
 /DELAYLOAD:"DBGHELP.DLL"
-/LIBPATH:"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\lib\x64"
+/LIBPATH:"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\lib\x64"
 /LIBPATH:"C:\Program Files (x86)\Windows Kits\10\lib\10.0.26100.0\ucrt\x64"
 /LIBPATH:"C:\Program Files (x86)\Windows Kits\10\lib\10.0.26100.0\um\x64"
 /NODEFAULTLIB:"LIBCMT"
@@ -37,9 +37,13 @@
 /FUNCTIONPADMIN:6
 "C:\UnrealEngineProjects\FirstProject\Intermediate\Build\Win64\x64\FirstProjectEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.InclOrderOldest.h.obj"
 "C:\UnrealEngineProjects\FirstProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\FirstProject\FirstProject.init.gen.cpp.obj"
+"C:\UnrealEngineProjects\FirstProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\FirstProject\FPCharacterBase.gen.cpp.obj"
 "C:\UnrealEngineProjects\FirstProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\FirstProject\FPDoor.gen.cpp.obj"
+"C:\UnrealEngineProjects\FirstProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\FirstProject\FPGameModeBase.gen.cpp.obj"
 "C:\UnrealEngineProjects\FirstProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\FirstProject\FirstProject.cpp.obj"
 "C:\UnrealEngineProjects\FirstProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\FirstProject\FPDoor.cpp.obj"
+"C:\UnrealEngineProjects\FirstProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\FirstProject\FPCharacterBase.cpp.obj"
+"C:\UnrealEngineProjects\FirstProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\FirstProject\FPGameModeBase.cpp.obj"
 "C:\UnrealEngineProjects\FirstProject\Intermediate\Build\Win64\x64\UnrealEditor\Development\FirstProject\Default.rc2.res"
 "..\Intermediate\Build\Win64\x64\UnrealEditor\Development\Engine\UnrealEditor-Engine.lib"
 "..\Intermediate\Build\Win64\x64\UnrealEditor\Development\Core\UnrealEditor-Core.lib"

@@ -48,6 +48,18 @@
     <ClCompile Include="..\..\Source\FirstProject\Private\Actors\FPDoor.cpp">
       <Filter>Source\FirstProject\Private\Actors</Filter>
     </ClCompile>
+    <Filter Include="Source\FirstProject\Private\Core">
+      <UniqueIdentifier>{8F5FF84E-866F-3B5C-A07D-3FE3F615A30E}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\FirstProject\Private\Core\FPCharacterBase.cpp">
+      <Filter>Source\FirstProject\Private\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\FirstProject\Private\Core\FPGameModeBase.cpp">
+      <Filter>Source\FirstProject\Private\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\FirstProject\Private\Core\FPPlayerController.cpp">
+      <Filter>Source\FirstProject\Private\Core</Filter>
+    </ClCompile>
     <Filter Include="Source\FirstProject\Public">
       <UniqueIdentifier>{F1D20869-2890-3948-AC16-314B570195E6}</UniqueIdentifier>
     </Filter>
@@ -56,6 +68,18 @@
     </Filter>
     <ClInclude Include="..\..\Source\FirstProject\Public\Actors\FPDoor.h">
       <Filter>Source\FirstProject\Public\Actors</Filter>
+    </ClInclude>
+    <Filter Include="Source\FirstProject\Public\Core">
+      <UniqueIdentifier>{2D4D89A5-A8B1-35BB-928E-9ADE134A13B0}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\FirstProject\Public\Core\FPCharacterBase.h">
+      <Filter>Source\FirstProject\Public\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\FirstProject\Public\Core\FPGameModeBase.h">
+      <Filter>Source\FirstProject\Public\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\FirstProject\Public\Core\FPPlayerController.h">
+      <Filter>Source\FirstProject\Public\Core</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
