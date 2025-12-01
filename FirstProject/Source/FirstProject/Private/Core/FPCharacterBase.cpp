@@ -30,6 +30,16 @@ void AFPCharacterBase::Move(const FInputActionValue& Value)
 	}
 }
 
+void AFPCharacterBase::StartJump(const FInputActionValue& Value)
+{
+	Jump();
+}
+
+void AFPCharacterBase::StopJump(const FInputActionValue& Value)
+{
+	StopJumping();
+}
+
 // Called every frame
 void AFPCharacterBase::Tick(float DeltaTime)
 {
