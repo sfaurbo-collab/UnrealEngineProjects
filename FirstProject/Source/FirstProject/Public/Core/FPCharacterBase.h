@@ -6,6 +6,9 @@
 #include "GameFramework/Character.h"
 #include "FPCharacterBase.generated.h"
 
+struct FInputActionValue;
+class UInputAction;
+
 UCLASS()
 class FIRSTPROJECT_API AFPCharacterBase : public ACharacter
 {
@@ -18,6 +21,11 @@ public:
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
+	TObjectPtr<UInputAction> MoveActions;
+
+	void Move(const FInputActionValue& Value);
 
 public:	
 	// Called every frame

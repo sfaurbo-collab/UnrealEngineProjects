@@ -2,6 +2,7 @@
 
 
 #include "Core/FPCharacterBase.h"
+#include "EnhancedInputComponent.h"
 
 // Sets default values
 AFPCharacterBase::AFPCharacterBase()
@@ -18,6 +19,11 @@ void AFPCharacterBase::BeginPlay()
 	
 }
 
+void AFPCharacterBase::Move(const FInputActionValue& Value)
+{
+
+}
+
 // Called every frame
 void AFPCharacterBase::Tick(float DeltaTime)
 {
@@ -29,6 +35,11 @@ void AFPCharacterBase::Tick(float DeltaTime)
 void AFPCharacterBase::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
+
+	if (UEnhancedInputComponent* EnhancedInputComponent = CastChecked<UEnhancedInputComponent>(PlayerInputComponent))
+	{
+		EnhancedInputComponent->BindAction(MoveActions, ETriggerEvent::Triggered, this, &AFPCharacterBase::Move);
+	}
 
 }
 
