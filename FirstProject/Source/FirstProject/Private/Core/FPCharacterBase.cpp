@@ -21,7 +21,13 @@ void AFPCharacterBase::BeginPlay()
 
 void AFPCharacterBase::Move(const FInputActionValue& Value)
 {
+	const float Move = Value.Get<float>();
 
+	if (Move != 0.0f)
+	{
+		// If a direction is pressed, move.
+		AddMovementInput(GetActorForwardVector() * Move);
+	}
 }
 
 // Called every frame
@@ -38,7 +44,12 @@ void AFPCharacterBase::SetupPlayerInputComponent(UInputComponent* PlayerInputCom
 
 	if (UEnhancedInputComponent* EnhancedInputComponent = CastChecked<UEnhancedInputComponent>(PlayerInputComponent))
 	{
+		// Moving
 		EnhancedInputComponent->BindAction(MoveActions, ETriggerEvent::Triggered, this, &AFPCharacterBase::Move);
+
+		//Jumping
+		EnhancedInputComponent->BindAction(JumpAction, ETriggerEvent::Started, this, &ACharacter::Jump);
+		EnhancedInputComponent->BindAction(JumpAction, ETriggerEvent::Completed, this, &ACharacter::StopJumping);
 	}
 
 }
