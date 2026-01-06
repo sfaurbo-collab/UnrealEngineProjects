@@ -11,10 +11,9 @@ void EmptyLinkFunctionForGeneratedCodeFPDoor() {}
 
 // Begin Cross Module References
 COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FRotator();
-ENGINE_API UClass* Z_Construct_UClass_AActor();
-ENGINE_API UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
 FIRSTPROJECT_API UClass* Z_Construct_UClass_AFPDoor();
 FIRSTPROJECT_API UClass* Z_Construct_UClass_AFPDoor_NoRegister();
+FIRSTPROJECT_API UClass* Z_Construct_UClass_AFPMeshActorBase();
 UPackage* Z_Construct_UPackage__Script_FirstProject();
 // End Cross Module References
 
@@ -34,17 +33,11 @@ struct Z_Construct_UClass_AFPDoor_Statics
 		{ "IncludePath", "Actors/FPDoor.h" },
 		{ "ModuleRelativePath", "Public/Actors/FPDoor.h" },
 	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MeshComp_MetaData[] = {
-		{ "Category", "Mesh" },
-		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Public/Actors/FPDoor.h" },
-	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_RotationTarget_MetaData[] = {
 		{ "Category", "Rotation" },
 		{ "ModuleRelativePath", "Public/Actors/FPDoor.h" },
 	};
 #endif // WITH_METADATA
-	static const UECodeGen_Private::FObjectPropertyParams NewProp_MeshComp;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_RotationTarget;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
@@ -53,15 +46,13 @@ struct Z_Construct_UClass_AFPDoor_Statics
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
-const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFPDoor_Statics::NewProp_MeshComp = { "MeshComp", nullptr, (EPropertyFlags)0x01240800000a001d, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AFPDoor, MeshComp), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MeshComp_MetaData), NewProp_MeshComp_MetaData) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFPDoor_Statics::NewProp_RotationTarget = { "RotationTarget", nullptr, (EPropertyFlags)0x0020080000000015, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AFPDoor, RotationTarget), Z_Construct_UScriptStruct_FRotator, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_RotationTarget_MetaData), NewProp_RotationTarget_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFPDoor_Statics::PropPointers[] = {
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFPDoor_Statics::NewProp_MeshComp,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFPDoor_Statics::NewProp_RotationTarget,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_AFPDoor_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_AFPDoor_Statics::DependentSingletons[])() = {
-	(UObject* (*)())Z_Construct_UClass_AActor,
+	(UObject* (*)())Z_Construct_UClass_AFPMeshActorBase,
 	(UObject* (*)())Z_Construct_UPackage__Script_FirstProject,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_AFPDoor_Statics::DependentSingletons) < 16);
@@ -100,10 +91,10 @@ AFPDoor::~AFPDoor() {}
 struct Z_CompiledInDeferFile_FID_UnrealEngineProjects_FirstProject_Source_FirstProject_Public_Actors_FPDoor_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AFPDoor, AFPDoor::StaticClass, TEXT("AFPDoor"), &Z_Registration_Info_UClass_AFPDoor, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AFPDoor), 712036598U) },
+		{ Z_Construct_UClass_AFPDoor, AFPDoor::StaticClass, TEXT("AFPDoor"), &Z_Registration_Info_UClass_AFPDoor, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AFPDoor), 2359214839U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_UnrealEngineProjects_FirstProject_Source_FirstProject_Public_Actors_FPDoor_h_4218789646(TEXT("/Script/FirstProject"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_UnrealEngineProjects_FirstProject_Source_FirstProject_Public_Actors_FPDoor_h_2214836444(TEXT("/Script/FirstProject"),
 	Z_CompiledInDeferFile_FID_UnrealEngineProjects_FirstProject_Source_FirstProject_Public_Actors_FPDoor_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_UnrealEngineProjects_FirstProject_Source_FirstProject_Public_Actors_FPDoor_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

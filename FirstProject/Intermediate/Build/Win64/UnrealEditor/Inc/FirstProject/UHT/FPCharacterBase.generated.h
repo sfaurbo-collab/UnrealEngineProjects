@@ -9,12 +9,20 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+struct FInputActionValue;
 #ifdef FIRSTPROJECT_FPCharacterBase_generated_h
 #error "FPCharacterBase.generated.h already included, missing '#pragma once' in FPCharacterBase.h"
 #endif
 #define FIRSTPROJECT_FPCharacterBase_generated_h
 
-#define FID_UnrealEngineProjects_FirstProject_Source_FirstProject_Public_Core_FPCharacterBase_h_15_INCLASS_NO_PURE_DECLS \
+#define FID_UnrealEngineProjects_FirstProject_Source_FirstProject_Public_Core_FPCharacterBase_h_23_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execLook); \
+	DECLARE_FUNCTION(execStopJump); \
+	DECLARE_FUNCTION(execStartJump); \
+	DECLARE_FUNCTION(execMove);
+
+
+#define FID_UnrealEngineProjects_FirstProject_Source_FirstProject_Public_Core_FPCharacterBase_h_23_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFPCharacterBase(); \
 	friend struct Z_Construct_UClass_AFPCharacterBase_Statics; \
@@ -23,7 +31,7 @@ public: \
 	DECLARE_SERIALIZER(AFPCharacterBase)
 
 
-#define FID_UnrealEngineProjects_FirstProject_Source_FirstProject_Public_Core_FPCharacterBase_h_15_ENHANCED_CONSTRUCTORS \
+#define FID_UnrealEngineProjects_FirstProject_Source_FirstProject_Public_Core_FPCharacterBase_h_23_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	AFPCharacterBase(AFPCharacterBase&&); \
@@ -35,12 +43,13 @@ public: \
 	NO_API virtual ~AFPCharacterBase();
 
 
-#define FID_UnrealEngineProjects_FirstProject_Source_FirstProject_Public_Core_FPCharacterBase_h_12_PROLOG
-#define FID_UnrealEngineProjects_FirstProject_Source_FirstProject_Public_Core_FPCharacterBase_h_15_GENERATED_BODY \
+#define FID_UnrealEngineProjects_FirstProject_Source_FirstProject_Public_Core_FPCharacterBase_h_20_PROLOG
+#define FID_UnrealEngineProjects_FirstProject_Source_FirstProject_Public_Core_FPCharacterBase_h_23_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_UnrealEngineProjects_FirstProject_Source_FirstProject_Public_Core_FPCharacterBase_h_15_INCLASS_NO_PURE_DECLS \
-	FID_UnrealEngineProjects_FirstProject_Source_FirstProject_Public_Core_FPCharacterBase_h_15_ENHANCED_CONSTRUCTORS \
+	FID_UnrealEngineProjects_FirstProject_Source_FirstProject_Public_Core_FPCharacterBase_h_23_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_UnrealEngineProjects_FirstProject_Source_FirstProject_Public_Core_FPCharacterBase_h_23_INCLASS_NO_PURE_DECLS \
+	FID_UnrealEngineProjects_FirstProject_Source_FirstProject_Public_Core_FPCharacterBase_h_23_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

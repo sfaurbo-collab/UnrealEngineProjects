@@ -262,7 +262,16 @@
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClInclude Include="..\..\Source\FirstProject\FirstProject.h"/>
+    <ClCompile Include="..\..\Source\FirstProject\Private\Actors\FPBomb.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
     <ClCompile Include="..\..\Source\FirstProject\Private\Actors\FPDoor.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\FirstProject\Private\Actors\FPLamp.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\FirstProject\Private\Actors\FPMeshActorBase.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClCompile Include="..\..\Source\FirstProject\Private\Core\FPCharacterBase.cpp">
@@ -274,7 +283,10 @@
     <ClCompile Include="..\..\Source\FirstProject\Private\Core\FPPlayerController.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <ClInclude Include="..\..\Source\FirstProject\Public\Actors\FPBomb.h"/>
     <ClInclude Include="..\..\Source\FirstProject\Public\Actors\FPDoor.h"/>
+    <ClInclude Include="..\..\Source\FirstProject\Public\Actors\FPLamp.h"/>
+    <ClInclude Include="..\..\Source\FirstProject\Public\Actors\FPMeshActorBase.h"/>
     <ClInclude Include="..\..\Source\FirstProject\Public\Core\FPCharacterBase.h"/>
     <ClInclude Include="..\..\Source\FirstProject\Public\Core\FPGameModeBase.h"/>
     <ClInclude Include="..\..\Source\FirstProject\Public\Core\FPPlayerController.h"/>

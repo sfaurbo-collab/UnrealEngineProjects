@@ -45,7 +45,16 @@
     <Filter Include="Source\FirstProject\Private\Actors">
       <UniqueIdentifier>{69A97324-3D3D-3161-B472-02D8D911AAEB}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\FirstProject\Private\Actors\FPBomb.cpp">
+      <Filter>Source\FirstProject\Private\Actors</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\FirstProject\Private\Actors\FPDoor.cpp">
+      <Filter>Source\FirstProject\Private\Actors</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\FirstProject\Private\Actors\FPLamp.cpp">
+      <Filter>Source\FirstProject\Private\Actors</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\FirstProject\Private\Actors\FPMeshActorBase.cpp">
       <Filter>Source\FirstProject\Private\Actors</Filter>
     </ClCompile>
     <Filter Include="Source\FirstProject\Private\Core">
@@ -66,7 +75,16 @@
     <Filter Include="Source\FirstProject\Public\Actors">
       <UniqueIdentifier>{5C22D751-01D8-39BF-8942-B9504CE602EC}</UniqueIdentifier>
     </Filter>
+    <ClInclude Include="..\..\Source\FirstProject\Public\Actors\FPBomb.h">
+      <Filter>Source\FirstProject\Public\Actors</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\FirstProject\Public\Actors\FPDoor.h">
+      <Filter>Source\FirstProject\Public\Actors</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\FirstProject\Public\Actors\FPLamp.h">
+      <Filter>Source\FirstProject\Public\Actors</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\FirstProject\Public\Actors\FPMeshActorBase.h">
       <Filter>Source\FirstProject\Public\Actors</Filter>
     </ClInclude>
     <Filter Include="Source\FirstProject\Public\Core">
