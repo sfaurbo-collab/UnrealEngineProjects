@@ -3,28 +3,41 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "GameFramework/Actor.h"
-#include "Actors/FPMeshActorBase.h"
+#include "FPMeshActorBase.h"
+#include "Interfaces/Interact.h"
 #include "FPDoor.generated.h"
 
+class AFPLamp;
 UCLASS()
-class FIRSTPROJECT_API AFPDoor : public AFPMeshActorBase
+class FIRSTPROJECT_API AFPDoor : public AFPMeshActorBase, public IInteract
 {
 	GENERATED_BODY()
 	
 public:	
+	
 	// Sets default values for this actor's properties
 	AFPDoor();
 
+	virtual void Interact_Implementation() override;
+
+	virtual bool CanInteract_Implementation() override;
+
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+	void OpenDoor();
+
 protected:
-	// Called when the game starts or when spawned
+	
 	virtual void BeginPlay() override;
 
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Rotation")
-	FRotator RotationTarget;
+private:
 
-public:	
-	// Called every frame
-	virtual void Tick(float DeltaTime) override;
+	UPROPERTY(BlueprintReadOnly, Category = "Rotation", meta = (AllowPrivateAccess = "true"))
+	bool IsOpen = false;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Actor Reference", meta = (AllowPrivateAccess = "true"))
+	TObjectPtr<AFPLamp> LampRefCpp;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Rotation", meta = (AllowPrivateAccess = "true"))
+	FRotator RotationTarget;
 
 };

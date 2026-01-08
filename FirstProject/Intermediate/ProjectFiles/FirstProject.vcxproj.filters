@@ -69,6 +69,12 @@
     <ClCompile Include="..\..\Source\FirstProject\Private\Core\FPPlayerController.cpp">
       <Filter>Source\FirstProject\Private\Core</Filter>
     </ClCompile>
+    <Filter Include="Source\FirstProject\Private\Interfaces">
+      <UniqueIdentifier>{4AACA85E-680D-30D9-85A4-CB583A837335}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\FirstProject\Private\Interfaces\Interact.cpp">
+      <Filter>Source\FirstProject\Private\Interfaces</Filter>
+    </ClCompile>
     <Filter Include="Source\FirstProject\Public">
       <UniqueIdentifier>{F1D20869-2890-3948-AC16-314B570195E6}</UniqueIdentifier>
     </Filter>
@@ -98,6 +104,12 @@
     </ClInclude>
     <ClInclude Include="..\..\Source\FirstProject\Public\Core\FPPlayerController.h">
       <Filter>Source\FirstProject\Public\Core</Filter>
+    </ClInclude>
+    <Filter Include="Source\FirstProject\Public\Interfaces">
+      <UniqueIdentifier>{FD836BAF-C7D4-3513-B750-D10894C0A3B8}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\FirstProject\Public\Interfaces\Interact.h">
+      <Filter>Source\FirstProject\Public\Interfaces</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

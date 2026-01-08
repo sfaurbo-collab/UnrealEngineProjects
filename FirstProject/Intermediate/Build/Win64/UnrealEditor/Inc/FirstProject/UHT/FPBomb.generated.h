@@ -14,16 +14,24 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define FIRSTPROJECT_FPBomb_generated_h
 
-#define FID_UnrealEngineProjects_FirstProject_Source_FirstProject_Public_Actors_FPBomb_h_15_INCLASS_NO_PURE_DECLS \
+#define FID_UnrealEngineProjects_FirstProject_Source_FirstProject_Public_Actors_FPBomb_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
+	virtual void StartIgnite_Implementation(); \
+	DECLARE_FUNCTION(execExplode); \
+	DECLARE_FUNCTION(execStartIgnite);
+
+
+#define FID_UnrealEngineProjects_FirstProject_Source_FirstProject_Public_Actors_FPBomb_h_17_CALLBACK_WRAPPERS
+#define FID_UnrealEngineProjects_FirstProject_Source_FirstProject_Public_Actors_FPBomb_h_17_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFPBomb(); \
 	friend struct Z_Construct_UClass_AFPBomb_Statics; \
 public: \
 	DECLARE_CLASS(AFPBomb, AFPMeshActorBase, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/FirstProject"), NO_API) \
-	DECLARE_SERIALIZER(AFPBomb)
+	DECLARE_SERIALIZER(AFPBomb) \
+	virtual UObject* _getUObject() const override { return const_cast<AFPBomb*>(this); }
 
 
-#define FID_UnrealEngineProjects_FirstProject_Source_FirstProject_Public_Actors_FPBomb_h_15_ENHANCED_CONSTRUCTORS \
+#define FID_UnrealEngineProjects_FirstProject_Source_FirstProject_Public_Actors_FPBomb_h_17_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFPBomb(); \
 private: \
@@ -37,12 +45,14 @@ public: \
 	NO_API virtual ~AFPBomb();
 
 
-#define FID_UnrealEngineProjects_FirstProject_Source_FirstProject_Public_Actors_FPBomb_h_12_PROLOG
-#define FID_UnrealEngineProjects_FirstProject_Source_FirstProject_Public_Actors_FPBomb_h_15_GENERATED_BODY \
+#define FID_UnrealEngineProjects_FirstProject_Source_FirstProject_Public_Actors_FPBomb_h_14_PROLOG
+#define FID_UnrealEngineProjects_FirstProject_Source_FirstProject_Public_Actors_FPBomb_h_17_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_UnrealEngineProjects_FirstProject_Source_FirstProject_Public_Actors_FPBomb_h_15_INCLASS_NO_PURE_DECLS \
-	FID_UnrealEngineProjects_FirstProject_Source_FirstProject_Public_Actors_FPBomb_h_15_ENHANCED_CONSTRUCTORS \
+	FID_UnrealEngineProjects_FirstProject_Source_FirstProject_Public_Actors_FPBomb_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_UnrealEngineProjects_FirstProject_Source_FirstProject_Public_Actors_FPBomb_h_17_CALLBACK_WRAPPERS \
+	FID_UnrealEngineProjects_FirstProject_Source_FirstProject_Public_Actors_FPBomb_h_17_INCLASS_NO_PURE_DECLS \
+	FID_UnrealEngineProjects_FirstProject_Source_FirstProject_Public_Actors_FPBomb_h_17_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

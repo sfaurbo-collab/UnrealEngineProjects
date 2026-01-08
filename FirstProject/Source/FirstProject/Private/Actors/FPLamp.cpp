@@ -2,4 +2,33 @@
 
 
 #include "Actors/FPLamp.h"
+#include "Kismet/GameplayStatics.h"
+
+void AFPLamp::BeginPlay()
+{
+	Super::BeginPlay();
+	// Get Material Instance to edit.
+	CodeMaterialInstance = MeshComp->CreateDynamicMaterialInstance(0);
+}
+
+void AFPLamp::ToggleLamp()
+{
+	// Toggle isOn
+	IsOn = !IsOn;
+
+	// Toggle emissive strength
+	CodeMaterialInstance->SetScalarParameterValue("EmissiveStrength", IsOn ? 20.0f : 0.0f);
+
+	OnLightSwitchedOnDelegate.Broadcast();
+}
+
+void AFPLamp::Interact_Implementation()
+{
+	ToggleLamp();
+}
+
+bool AFPLamp::CanInteract_Implementation()
+{
+	return false;
+}
 

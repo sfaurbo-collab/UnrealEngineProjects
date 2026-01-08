@@ -14,13 +14,18 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define FIRSTPROJECT_FPLamp_generated_h
 
+#define FID_UnrealEngineProjects_FirstProject_Source_FirstProject_Public_Actors_FPLamp_h_10_DELEGATE \
+FIRSTPROJECT_API void FLightSwitchedOnSignature_DelegateWrapper(const FMulticastScriptDelegate& LightSwitchedOnSignature);
+
+
 #define FID_UnrealEngineProjects_FirstProject_Source_FirstProject_Public_Actors_FPLamp_h_15_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFPLamp(); \
 	friend struct Z_Construct_UClass_AFPLamp_Statics; \
 public: \
 	DECLARE_CLASS(AFPLamp, AFPMeshActorBase, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/FirstProject"), NO_API) \
-	DECLARE_SERIALIZER(AFPLamp)
+	DECLARE_SERIALIZER(AFPLamp) \
+	virtual UObject* _getUObject() const override { return const_cast<AFPLamp*>(this); }
 
 
 #define FID_UnrealEngineProjects_FirstProject_Source_FirstProject_Public_Actors_FPLamp_h_15_ENHANCED_CONSTRUCTORS \

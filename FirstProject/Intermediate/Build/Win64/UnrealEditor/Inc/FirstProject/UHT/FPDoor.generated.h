@@ -14,16 +14,23 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define FIRSTPROJECT_FPDoor_generated_h
 
-#define FID_UnrealEngineProjects_FirstProject_Source_FirstProject_Public_Actors_FPDoor_h_13_INCLASS_NO_PURE_DECLS \
+#define FID_UnrealEngineProjects_FirstProject_Source_FirstProject_Public_Actors_FPDoor_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
+	virtual void OpenDoor_Implementation(); \
+	DECLARE_FUNCTION(execOpenDoor);
+
+
+#define FID_UnrealEngineProjects_FirstProject_Source_FirstProject_Public_Actors_FPDoor_h_14_CALLBACK_WRAPPERS
+#define FID_UnrealEngineProjects_FirstProject_Source_FirstProject_Public_Actors_FPDoor_h_14_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFPDoor(); \
 	friend struct Z_Construct_UClass_AFPDoor_Statics; \
 public: \
 	DECLARE_CLASS(AFPDoor, AFPMeshActorBase, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/FirstProject"), NO_API) \
-	DECLARE_SERIALIZER(AFPDoor)
+	DECLARE_SERIALIZER(AFPDoor) \
+	virtual UObject* _getUObject() const override { return const_cast<AFPDoor*>(this); }
 
 
-#define FID_UnrealEngineProjects_FirstProject_Source_FirstProject_Public_Actors_FPDoor_h_13_ENHANCED_CONSTRUCTORS \
+#define FID_UnrealEngineProjects_FirstProject_Source_FirstProject_Public_Actors_FPDoor_h_14_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	AFPDoor(AFPDoor&&); \
@@ -35,12 +42,14 @@ public: \
 	NO_API virtual ~AFPDoor();
 
 
-#define FID_UnrealEngineProjects_FirstProject_Source_FirstProject_Public_Actors_FPDoor_h_10_PROLOG
-#define FID_UnrealEngineProjects_FirstProject_Source_FirstProject_Public_Actors_FPDoor_h_13_GENERATED_BODY \
+#define FID_UnrealEngineProjects_FirstProject_Source_FirstProject_Public_Actors_FPDoor_h_11_PROLOG
+#define FID_UnrealEngineProjects_FirstProject_Source_FirstProject_Public_Actors_FPDoor_h_14_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_UnrealEngineProjects_FirstProject_Source_FirstProject_Public_Actors_FPDoor_h_13_INCLASS_NO_PURE_DECLS \
-	FID_UnrealEngineProjects_FirstProject_Source_FirstProject_Public_Actors_FPDoor_h_13_ENHANCED_CONSTRUCTORS \
+	FID_UnrealEngineProjects_FirstProject_Source_FirstProject_Public_Actors_FPDoor_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_UnrealEngineProjects_FirstProject_Source_FirstProject_Public_Actors_FPDoor_h_14_CALLBACK_WRAPPERS \
+	FID_UnrealEngineProjects_FirstProject_Source_FirstProject_Public_Actors_FPDoor_h_14_INCLASS_NO_PURE_DECLS \
+	FID_UnrealEngineProjects_FirstProject_Source_FirstProject_Public_Actors_FPDoor_h_14_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

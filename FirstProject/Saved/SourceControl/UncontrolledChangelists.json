@@ -16,7 +16,10 @@
 				"C:/UnrealEngineProjects/FirstProject/Content/Blueprints/Core/BP_Character.uasset",
 				"C:/UnrealEngineProjects/FirstProject/Content/Maps/Main.umap",
 				"C:/UnrealEngineProjects/FirstProject/Content/Blueprints/Actors/BP_Door.uasset",
-				"C:/UnrealEngineProjects/FirstProject/Content/Stylized_Egypt/Maps/Stylized_Egypt_Demo.umap"
+				"C:/UnrealEngineProjects/FirstProject/Content/Stylized_Egypt/Maps/Stylized_Egypt_Demo.umap",
+				"C:/UnrealEngineProjects/FirstProject/Content/Blueprints/Interfaces/BPI_Interact.uasset",
+				"C:/UnrealEngineProjects/FirstProject/Content/Blueprints/Actors/BP_DoorBlueprintOnly.uasset",
+				"C:/UnrealEngineProjects/FirstProject/Content/Blueprints/BP_TargetCube.uasset"
 			]
 		}
 	]
