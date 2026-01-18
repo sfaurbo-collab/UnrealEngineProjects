@@ -1,0 +1,15 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\unrealengineprojects\\firstproject-crptd\\source\\firstproject\\private\\interfaces\\iusable.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\unrealengineprojects\\firstproject-crptd\\intermediate\\build\\win64\\x64\\firstprojecteditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.inclorderoldest.h.pch",
+        "Includes": [
+            "c:\\unrealengineprojects\\firstproject-crptd\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\firstproject\\definitions.firstproject.h",
+            "c:\\unrealengineprojects\\firstproject-crptd\\source\\firstproject\\public\\interfaces\\iusable.h",
+            "c:\\unrealengineprojects\\firstproject-crptd\\intermediate\\build\\win64\\unrealeditor\\inc\\firstproject\\uht\\iusable.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

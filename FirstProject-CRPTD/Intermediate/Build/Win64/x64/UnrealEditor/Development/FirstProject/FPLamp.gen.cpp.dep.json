@@ -1,0 +1,19 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\unrealengineprojects\\firstproject-crptd\\intermediate\\build\\win64\\unrealeditor\\inc\\firstproject\\uht\\fplamp.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\unrealengineprojects\\firstproject-crptd\\intermediate\\build\\win64\\x64\\firstprojecteditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.inclorderoldest.h.pch",
+        "Includes": [
+            "c:\\unrealengineprojects\\firstproject-crptd\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\firstproject\\definitions.firstproject.h",
+            "c:\\unrealengineprojects\\firstproject-crptd\\source\\firstproject\\public\\actors\\fplamp.h",
+            "c:\\unrealengineprojects\\firstproject-crptd\\source\\firstproject\\public\\actors\\fpmeshactorbase.h",
+            "c:\\unrealengineprojects\\firstproject-crptd\\intermediate\\build\\win64\\unrealeditor\\inc\\firstproject\\uht\\fpmeshactorbase.generated.h",
+            "c:\\unrealengineprojects\\firstproject-crptd\\source\\firstproject\\public\\interfaces\\interact.h",
+            "c:\\unrealengineprojects\\firstproject-crptd\\intermediate\\build\\win64\\unrealeditor\\inc\\firstproject\\uht\\interact.generated.h",
+            "c:\\unrealengineprojects\\firstproject-crptd\\intermediate\\build\\win64\\unrealeditor\\inc\\firstproject\\uht\\fplamp.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
