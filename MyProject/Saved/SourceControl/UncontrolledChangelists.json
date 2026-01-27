@@ -1,0 +1,31 @@
+{
+	"version": 1,
+	"changelists": [
+		{
+			"guid": "00000000000000000000000000000000",
+			"description": "Default Uncontrolled Changelist",
+			"files": [
+				"C:/UnrealEngineProjects/MyProject/Content/Maps/Main.umap",
+				"C:/UnrealEngineProjects/MyProject/Content/Input/Actions/IA_Move.uasset",
+				"C:/UnrealEngineProjects/MyProject/Content/Input/IMC_Default.uasset",
+				"C:/UnrealEngineProjects/MyProject/Content/Blueprints/BP_MainCharacter.uasset",
+				"C:/UnrealEngineProjects/MyProject/Content/SWAT/Swat_PhysicsAsset.uasset",
+				"C:/UnrealEngineProjects/MyProject/Content/SWAT/Soldier_Body_diffuse.uasset",
+				"C:/UnrealEngineProjects/MyProject/Content/SWAT/Soldier_Body_normal.uasset",
+				"C:/UnrealEngineProjects/MyProject/Content/SWAT/Soldier_Body_specular.uasset",
+				"C:/UnrealEngineProjects/MyProject/Content/SWAT/Soldier_head_diffuse.uasset",
+				"C:/UnrealEngineProjects/MyProject/Content/SWAT/Soldier_head_specular.uasset",
+				"C:/UnrealEngineProjects/MyProject/Content/SWAT/Swat_Skeleton.uasset",
+				"C:/UnrealEngineProjects/MyProject/Content/SWAT/Soldier_head_normal.uasset",
+				"C:/UnrealEngineProjects/MyProject/Content/SWAT/Soldier_body1.uasset",
+				"C:/UnrealEngineProjects/MyProject/Content/SWAT/Soldier_body1_ncl_1.uasset",
+				"C:/UnrealEngineProjects/MyProject/Content/SWAT/Soldier_head6.uasset",
+				"C:/UnrealEngineProjects/MyProject/Content/SWAT/Swat.uasset",
+				"C:/UnrealEngineProjects/MyProject/Content/SWAT/Swat_Anim.uasset",
+				"C:/UnrealEngineProjects/MyProject/Content/Core/BP_GameModeBase.uasset",
+				"C:/UnrealEngineProjects/MyProject/Content/Input/Actions/IA_Look.uasset",
+				"C:/UnrealEngineProjects/MyProject/Content/Core/BP_PlayerController.uasset"
+			]
+		}
+	]
+}

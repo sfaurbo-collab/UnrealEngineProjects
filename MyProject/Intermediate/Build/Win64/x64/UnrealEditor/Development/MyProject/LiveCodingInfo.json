@@ -1,0 +1,12 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.MyProject.gen.cpp.obj": [
+			"MPBaseCharacter.gen.cpp.obj",
+			"MPGameModeBase.gen.cpp.obj",
+			"MPMainCharacter.gen.cpp.obj",
+			"MPPlayerController.gen.cpp.obj",
+			"MyProject.init.gen.cpp.obj"
+		]
+	}
+}
