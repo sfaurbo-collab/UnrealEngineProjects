@@ -38,8 +38,23 @@ void AMPPlayerController::Move(const FInputActionValue& Value)
 	if (APawn* ControlledPawn = GetPawn())
 	{
 		// add movement 
-		ControlledPawn->AddMovementInput(ControlledPawn->GetActorForwardVector(), MovementVector.Y);
-		ControlledPawn->AddMovementInput(ControlledPawn->GetActorRightVector(), MovementVector.X);
+		//ControlledPawn->AddMovementInput(ControlledPawn->GetActorForwardVector(), MovementVector.Y);
+		//ControlledPawn->AddMovementInput(ControlledPawn->GetActorRightVector(), MovementVector.X);
+
+		// find out which camera is facing
+		const FRotator Rotation = GetControlRotation();
+		const FRotator CameraRotation(0, Rotation.Yaw, 0);
+
+		// get forward vector
+		const FVector ForwardDirection = FRotationMatrix(CameraRotation).GetUnitAxis(EAxis::X);
+		// add movement in that direction
+		ControlledPawn->AddMovementInput(ForwardDirection, MovementVector.Y);
+
+		// get right vector
+		const FVector RightDirection = FRotationMatrix(CameraRotation).GetUnitAxis(EAxis::Y);
+		// add movement in that direction
+		ControlledPawn->AddMovementInput(RightDirection, MovementVector.X);
+
 	}
 }
 

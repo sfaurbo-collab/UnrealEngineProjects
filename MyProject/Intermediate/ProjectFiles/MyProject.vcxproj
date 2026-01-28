@@ -265,6 +265,9 @@
     <ClCompile Include="..\..\Source\MyProject\Private\Characters\MPBaseCharacter.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <ClCompile Include="..\..\Source\MyProject\Private\Characters\MPMainAnimInstance.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
     <ClCompile Include="..\..\Source\MyProject\Private\Characters\MPMainCharacter.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
@@ -275,6 +278,7 @@
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClInclude Include="..\..\Source\MyProject\Public\Characters\MPBaseCharacter.h"/>
+    <ClInclude Include="..\..\Source\MyProject\Public\Characters\MPMainAnimInstance.h"/>
     <ClInclude Include="..\..\Source\MyProject\Public\Characters\MPMainCharacter.h"/>
     <ClInclude Include="..\..\Source\MyProject\Public\Core\MPGameModeBase.h"/>
     <ClInclude Include="..\..\Source\MyProject\Public\Core\MPPlayerController.h"/>

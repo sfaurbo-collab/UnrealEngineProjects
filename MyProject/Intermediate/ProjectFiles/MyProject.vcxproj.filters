@@ -48,6 +48,9 @@
     <ClCompile Include="..\..\Source\MyProject\Private\Characters\MPBaseCharacter.cpp">
       <Filter>Source\MyProject\Private\Characters</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\MyProject\Private\Characters\MPMainAnimInstance.cpp">
+      <Filter>Source\MyProject\Private\Characters</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\MyProject\Private\Characters\MPMainCharacter.cpp">
       <Filter>Source\MyProject\Private\Characters</Filter>
     </ClCompile>
@@ -67,6 +70,9 @@
       <UniqueIdentifier>{5F8F63CE-E7F1-39A8-A634-93E1AA747CAF}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\MyProject\Public\Characters\MPBaseCharacter.h">
+      <Filter>Source\MyProject\Public\Characters</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\MyProject\Public\Characters\MPMainAnimInstance.h">
       <Filter>Source\MyProject\Public\Characters</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\MyProject\Public\Characters\MPMainCharacter.h">

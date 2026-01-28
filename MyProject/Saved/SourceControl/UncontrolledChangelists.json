@@ -24,7 +24,26 @@
 				"C:/UnrealEngineProjects/MyProject/Content/SWAT/Swat_Anim.uasset",
 				"C:/UnrealEngineProjects/MyProject/Content/Core/BP_GameModeBase.uasset",
 				"C:/UnrealEngineProjects/MyProject/Content/Input/Actions/IA_Look.uasset",
-				"C:/UnrealEngineProjects/MyProject/Content/Core/BP_PlayerController.uasset"
+				"C:/UnrealEngineProjects/MyProject/Content/Core/BP_PlayerController.uasset",
+				"C:/UnrealEngineProjects/MyProject/Content/Blueprints/ABP_MainCharacterAnimation.uasset",
+				"C:/UnrealEngineProjects/MyProject/Content/SWAT/Animations/Rifle_Idle_PhysicsAsset.uasset",
+				"C:/UnrealEngineProjects/MyProject/Content/SWAT/Animations/Soldier_head6.uasset",
+				"C:/UnrealEngineProjects/MyProject/Content/SWAT/Animations/Rifle_Idle.uasset",
+				"C:/UnrealEngineProjects/MyProject/Content/SWAT/Animations/Rifle_Idle_Anim.uasset",
+				"C:/UnrealEngineProjects/MyProject/Content/SWAT/Animations/Run_Forward_PhysicsAsset.uasset",
+				"C:/UnrealEngineProjects/MyProject/Content/SWAT/Animations/Run_Forward.uasset",
+				"C:/UnrealEngineProjects/MyProject/Content/SWAT/Animations/Run_Forward_Anim.uasset",
+				"C:/UnrealEngineProjects/MyProject/Content/SWAT/Animations/Soldier_body1.uasset",
+				"C:/UnrealEngineProjects/MyProject/Content/SWAT/Animations/Soldier_body1_ncl_1.uasset",
+				"C:/UnrealEngineProjects/MyProject/Content/SWAT/Animations/Walk_Forward_PhysicsAsset.uasset",
+				"C:/UnrealEngineProjects/MyProject/Content/SWAT/Animations/Soldier_Body_diffuse.uasset",
+				"C:/UnrealEngineProjects/MyProject/Content/SWAT/Animations/Soldier_Body_normal.uasset",
+				"C:/UnrealEngineProjects/MyProject/Content/SWAT/Animations/Soldier_Body_specular.uasset",
+				"C:/UnrealEngineProjects/MyProject/Content/SWAT/Animations/Soldier_head_diffuse.uasset",
+				"C:/UnrealEngineProjects/MyProject/Content/SWAT/Animations/Soldier_head_specular.uasset",
+				"C:/UnrealEngineProjects/MyProject/Content/SWAT/Animations/Soldier_head_normal.uasset",
+				"C:/UnrealEngineProjects/MyProject/Content/SWAT/Animations/Walk_Forward.uasset",
+				"C:/UnrealEngineProjects/MyProject/Content/SWAT/Animations/Walk_Forward_Anim.uasset"
 			]
 		}
 	]
