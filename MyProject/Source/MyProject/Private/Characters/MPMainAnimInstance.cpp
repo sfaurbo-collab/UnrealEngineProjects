@@ -2,6 +2,8 @@
 
 
 #include "Characters/MPMainAnimInstance.h"
+#include "GameFramework/CharacterMovementComponent.h"
+#include "KismetAnimationLibrary.h"
 
 void UMPMainAnimInstance::NativeInitializeAnimation()
 {
@@ -26,5 +28,7 @@ void UMPMainAnimInstance::UpdateAnimationProperties()
 		FVector LateralSpeed = FVector(Speed.X, Speed.Y, 0);
 
 		MovementSpeed = LateralSpeed.Size();
+		bIsInAir = OwningPawn->GetMovementComponent()->IsFalling();
+		Direction = UKismetAnimationLibrary::CalculateDirection(Speed, OwningPawn->GetActorRotation());
 	}
 }

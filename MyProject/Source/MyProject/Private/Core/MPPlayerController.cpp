@@ -1,6 +1,9 @@
 #include "Core/MPPlayerController.h"
 #include "EnhancedInputComponent.h"
 #include "EnhancedInputSubsystems.h"
+#include "GameFramework/Character.h"
+#include "GameFramework/CharacterMovementComponent.h" 
+
 
 // Called when the game starts or when spawned
 void AMPPlayerController::BeginPlay()
@@ -12,6 +15,12 @@ void AMPPlayerController::BeginPlay()
 	{
 		Subsystem->AddMappingContext(DefaultMappingContext, 0);
 	}
+
+	if (ACharacter* ControlledCharacter = GetCharacter())
+	{
+		ControlledCharacter->GetCharacterMovement()->MaxWalkSpeed = WalkSpeed;
+	}
+
 }
 
 // Allows the PlayerController to setup custom input bindings
@@ -24,9 +33,19 @@ void AMPPlayerController::SetupInputComponent()
 	{
 		// Moving
 		EnhancedInputComponent->BindAction(MoveAction, ETriggerEvent::Triggered, this, &AMPPlayerController::Move);
+		EnhancedInputComponent->BindAction(MoveAction, ETriggerEvent::Completed, this, &AMPPlayerController::StopMove);
 		
 		// Looking
 		EnhancedInputComponent->BindAction(LookAction, ETriggerEvent::Triggered, this, &AMPPlayerController::Look);
+
+		// Jumping
+		EnhancedInputComponent->BindAction(JumpAction, ETriggerEvent::Triggered, this, &AMPPlayerController::Jump);
+		EnhancedInputComponent->BindAction(JumpAction, ETriggerEvent::Completed, this, &AMPPlayerController::StopJumping);
+
+		// Sprinting
+		EnhancedInputComponent->BindAction(SprintAction, ETriggerEvent::Triggered, this, &AMPPlayerController::StartSprint);
+		EnhancedInputComponent->BindAction(SprintAction, ETriggerEvent::Completed, this, &AMPPlayerController::StopSprint);
+
 	}
 }
 
@@ -35,11 +54,9 @@ void AMPPlayerController::Move(const FInputActionValue& Value)
 	// input is a Vector2D
 	FVector2D MovementVector = Value.Get<FVector2D>();
 	
-	if (APawn* ControlledPawn = GetPawn())
+	if (ACharacter* ControlledCharacter = GetCharacter())
 	{
-		// add movement 
-		//ControlledPawn->AddMovementInput(ControlledPawn->GetActorForwardVector(), MovementVector.Y);
-		//ControlledPawn->AddMovementInput(ControlledPawn->GetActorRightVector(), MovementVector.X);
+		ControlledCharacter->GetCharacterMovement()->bOrientRotationToMovement = false;
 
 		// find out which camera is facing
 		const FRotator Rotation = GetControlRotation();
@@ -48,13 +65,21 @@ void AMPPlayerController::Move(const FInputActionValue& Value)
 		// get forward vector
 		const FVector ForwardDirection = FRotationMatrix(CameraRotation).GetUnitAxis(EAxis::X);
 		// add movement in that direction
-		ControlledPawn->AddMovementInput(ForwardDirection, MovementVector.Y);
+		ControlledCharacter->AddMovementInput(ForwardDirection, MovementVector.Y);
 
 		// get right vector
 		const FVector RightDirection = FRotationMatrix(CameraRotation).GetUnitAxis(EAxis::Y);
 		// add movement in that direction
-		ControlledPawn->AddMovementInput(RightDirection, MovementVector.X);
+		ControlledCharacter->AddMovementInput(RightDirection, MovementVector.X);
 
+	}
+}
+
+void AMPPlayerController::StopMove()
+{
+	if (ACharacter* ControlledCharacter = CastChecked<ACharacter>(GetCharacter()))
+	{
+		ControlledCharacter->GetCharacterMovement()->bOrientRotationToMovement = true;
 	}
 }
 
@@ -66,4 +91,36 @@ void AMPPlayerController::Look(const FInputActionValue& Value)
 	// add yaw and pitch input to controller
 	AddYawInput(LookAxisVector.X);
 	AddPitchInput(-LookAxisVector.Y);
+}
+
+void AMPPlayerController::Jump()
+{
+	if (ACharacter* ControlledCharacter = GetCharacter())
+	{
+		ControlledCharacter->Jump();
+	}
+}
+
+void AMPPlayerController::StopJumping()
+{
+	if (ACharacter* ControlledCharacter = GetCharacter())
+	{
+		ControlledCharacter->StopJumping();
+	}
+}
+
+void AMPPlayerController::StartSprint()
+{
+	if (ACharacter* ControlledCharacter = GetCharacter())
+	{
+		ControlledCharacter->GetCharacterMovement()->MaxWalkSpeed = RunSpeed;
+	}
+}
+
+void AMPPlayerController::StopSprint()
+{
+	if (ACharacter* ControlledCharacter = GetCharacter())
+	{
+		ControlledCharacter->GetCharacterMovement()->MaxWalkSpeed = WalkSpeed;
+	}
 }

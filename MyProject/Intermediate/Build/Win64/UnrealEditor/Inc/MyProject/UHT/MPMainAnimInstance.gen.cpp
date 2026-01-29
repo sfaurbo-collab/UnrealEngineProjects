@@ -101,6 +101,14 @@ struct Z_Construct_UClass_UMPMainAnimInstance_Statics
 		{ "Category", "Movement" },
 		{ "ModuleRelativePath", "Public/Characters/MPMainAnimInstance.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Direction_MetaData[] = {
+		{ "Category", "Movement" },
+		{ "ModuleRelativePath", "Public/Characters/MPMainAnimInstance.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bIsInAir_MetaData[] = {
+		{ "Category", "Movement" },
+		{ "ModuleRelativePath", "Public/Characters/MPMainAnimInstance.h" },
+	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OwningPawn_MetaData[] = {
 		{ "Category", "Movement" },
 		{ "ModuleRelativePath", "Public/Characters/MPMainAnimInstance.h" },
@@ -109,6 +117,9 @@ struct Z_Construct_UClass_UMPMainAnimInstance_Statics
 
 // ********** Begin Class UMPMainAnimInstance constinit property declarations **********************
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_MovementSpeed;
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_Direction;
+	static void NewProp_bIsInAir_SetBit(void* Obj);
+	static const UECodeGen_Private::FBoolPropertyParams NewProp_bIsInAir;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_OwningPawn;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 // ********** End Class UMPMainAnimInstance constinit property declarations ************************
@@ -127,10 +138,18 @@ struct Z_Construct_UClass_UMPMainAnimInstance_Statics
 }; // struct Z_Construct_UClass_UMPMainAnimInstance_Statics
 
 // ********** Begin Class UMPMainAnimInstance Property Definitions *********************************
-const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UMPMainAnimInstance_Statics::NewProp_MovementSpeed = { "MovementSpeed", nullptr, (EPropertyFlags)0x0010000000020015, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UMPMainAnimInstance, MovementSpeed), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MovementSpeed_MetaData), NewProp_MovementSpeed_MetaData) };
-const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UMPMainAnimInstance_Statics::NewProp_OwningPawn = { "OwningPawn", nullptr, (EPropertyFlags)0x0010000000020015, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UMPMainAnimInstance, OwningPawn), Z_Construct_UClass_APawn_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OwningPawn_MetaData), NewProp_OwningPawn_MetaData) };
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UMPMainAnimInstance_Statics::NewProp_MovementSpeed = { "MovementSpeed", nullptr, (EPropertyFlags)0x0010000000000015, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UMPMainAnimInstance, MovementSpeed), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MovementSpeed_MetaData), NewProp_MovementSpeed_MetaData) };
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UMPMainAnimInstance_Statics::NewProp_Direction = { "Direction", nullptr, (EPropertyFlags)0x0010000000000015, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UMPMainAnimInstance, Direction), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Direction_MetaData), NewProp_Direction_MetaData) };
+void Z_Construct_UClass_UMPMainAnimInstance_Statics::NewProp_bIsInAir_SetBit(void* Obj)
+{
+	((UMPMainAnimInstance*)Obj)->bIsInAir = 1;
+}
+const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UMPMainAnimInstance_Statics::NewProp_bIsInAir = { "bIsInAir", nullptr, (EPropertyFlags)0x0010000000000015, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(UMPMainAnimInstance), &Z_Construct_UClass_UMPMainAnimInstance_Statics::NewProp_bIsInAir_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_bIsInAir_MetaData), NewProp_bIsInAir_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UMPMainAnimInstance_Statics::NewProp_OwningPawn = { "OwningPawn", nullptr, (EPropertyFlags)0x0010000000000015, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UMPMainAnimInstance, OwningPawn), Z_Construct_UClass_APawn_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OwningPawn_MetaData), NewProp_OwningPawn_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UMPMainAnimInstance_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UMPMainAnimInstance_Statics::NewProp_MovementSpeed,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UMPMainAnimInstance_Statics::NewProp_Direction,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UMPMainAnimInstance_Statics::NewProp_bIsInAir,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UMPMainAnimInstance_Statics::NewProp_OwningPawn,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UMPMainAnimInstance_Statics::PropPointers) < 2048);
@@ -177,10 +196,10 @@ UMPMainAnimInstance::~UMPMainAnimInstance() {}
 struct Z_CompiledInDeferFile_FID_UnrealEngineProjects_MyProject_Source_MyProject_Public_Characters_MPMainAnimInstance_h__Script_MyProject_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UMPMainAnimInstance, UMPMainAnimInstance::StaticClass, TEXT("UMPMainAnimInstance"), &Z_Registration_Info_UClass_UMPMainAnimInstance, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UMPMainAnimInstance), 1159787360U) },
+		{ Z_Construct_UClass_UMPMainAnimInstance, UMPMainAnimInstance::StaticClass, TEXT("UMPMainAnimInstance"), &Z_Registration_Info_UClass_UMPMainAnimInstance, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UMPMainAnimInstance), 2714238460U) },
 	};
 }; // Z_CompiledInDeferFile_FID_UnrealEngineProjects_MyProject_Source_MyProject_Public_Characters_MPMainAnimInstance_h__Script_MyProject_Statics 
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_UnrealEngineProjects_MyProject_Source_MyProject_Public_Characters_MPMainAnimInstance_h__Script_MyProject_4108461804{
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_UnrealEngineProjects_MyProject_Source_MyProject_Public_Characters_MPMainAnimInstance_h__Script_MyProject_4221782975{
 	TEXT("/Script/MyProject"),
 	Z_CompiledInDeferFile_FID_UnrealEngineProjects_MyProject_Source_MyProject_Public_Characters_MPMainAnimInstance_h__Script_MyProject_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_UnrealEngineProjects_MyProject_Source_MyProject_Public_Characters_MPMainAnimInstance_h__Script_MyProject_Statics::ClassInfo),
 	nullptr, 0,
