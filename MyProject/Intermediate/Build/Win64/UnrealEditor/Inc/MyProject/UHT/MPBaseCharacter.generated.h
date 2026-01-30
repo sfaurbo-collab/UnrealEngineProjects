@@ -15,8 +15,15 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class AActor;
+class UPrimitiveComponent;
+struct FHitResult;
 
 // ********** Begin Class AMPBaseCharacter *********************************************************
+#define FID_UnrealEngineProjects_MyProject_Source_MyProject_Public_Characters_MPBaseCharacter_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execOnOverlapBegin_AttackCapsule);
+
+
 struct Z_Construct_UClass_AMPBaseCharacter_Statics;
 MYPROJECT_API UClass* Z_Construct_UClass_AMPBaseCharacter_NoRegister();
 
@@ -45,6 +52,7 @@ public: \
 #define FID_UnrealEngineProjects_MyProject_Source_MyProject_Public_Characters_MPBaseCharacter_h_12_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
+	FID_UnrealEngineProjects_MyProject_Source_MyProject_Public_Characters_MPBaseCharacter_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
 	FID_UnrealEngineProjects_MyProject_Source_MyProject_Public_Characters_MPBaseCharacter_h_12_INCLASS_NO_PURE_DECLS \
 	FID_UnrealEngineProjects_MyProject_Source_MyProject_Public_Characters_MPBaseCharacter_h_12_ENHANCED_CONSTRUCTORS \
 private: \

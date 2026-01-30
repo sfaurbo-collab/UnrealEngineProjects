@@ -3,6 +3,7 @@
 	{
 		"Module.MyProject.gen.cpp.obj": [
 			"MPBaseCharacter.gen.cpp.obj",
+			"MPDealDamageAnimNotifyState.gen.cpp.obj",
 			"MPGameModeBase.gen.cpp.obj",
 			"MPMainAnimInstance.gen.cpp.obj",
 			"MPMainCharacter.gen.cpp.obj",

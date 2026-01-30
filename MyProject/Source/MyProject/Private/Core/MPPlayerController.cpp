@@ -1,7 +1,7 @@
 #include "Core/MPPlayerController.h"
 #include "EnhancedInputComponent.h"
 #include "EnhancedInputSubsystems.h"
-#include "GameFramework/Character.h"
+#include "Characters/MPBaseCharacter.h"
 #include "GameFramework/CharacterMovementComponent.h" 
 
 
@@ -45,6 +45,9 @@ void AMPPlayerController::SetupInputComponent()
 		// Sprinting
 		EnhancedInputComponent->BindAction(SprintAction, ETriggerEvent::Triggered, this, &AMPPlayerController::StartSprint);
 		EnhancedInputComponent->BindAction(SprintAction, ETriggerEvent::Completed, this, &AMPPlayerController::StopSprint);
+
+		// Attacking
+		EnhancedInputComponent->BindAction(AttackAction, ETriggerEvent::Started, this, &AMPPlayerController::Attack);
 
 	}
 }
@@ -122,5 +125,13 @@ void AMPPlayerController::StopSprint()
 	if (ACharacter* ControlledCharacter = GetCharacter())
 	{
 		ControlledCharacter->GetCharacterMovement()->MaxWalkSpeed = WalkSpeed;
+	}
+}
+
+void AMPPlayerController::Attack()
+{
+	if (AMPBaseCharacter* ControlledCharacter = CastChecked<AMPBaseCharacter>(GetCharacter()))
+	{
+		ControlledCharacter->Attack();
 	}
 }
